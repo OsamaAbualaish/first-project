@@ -1,0 +1,1144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* -------------------------------------------------header------------------------------------------------- */
+.header{
+width: 100%;
+height: 70px;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+position: fixed;
+z-index: 15;
+
+
+}
+.img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0px;
+    margin-left: 80px;
+    
+}
+
+.list{
+    float: right;
+    width: 50%;
+    height: 50px;
+    margin: 10px 0px;
+    margin-right: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+.list ul{
+   margin-top: 7px;
+}
+.list ul li{
+    display: inline-block;
+    
+    height: 30px;
+    margin: 2px 15px;
+
+}
+.list ul li a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+
+
+
+}
+.list ul li a:hover{
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.list li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: rgb(250, 240, 230);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s;
+
+}
+
+.list li a:hover::after {
+    width: 100%;
+}
+/* ---------------------------------------------------------1st sec------------------------------------------------------------ */
+
+.sec1{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/eqs-2021-exterieur-010-w1680xh945-cutout.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+
+.sec1-div{
+    width: 50%;
+    height: 45%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.sec1-div img{
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+
+}
+.sec1-div h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0px;
+    text-transform: capitalize;
+
+}
+.sec1-div p{
+    color: rgb(215, 214, 214);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0px;
+    line-height: 25px;
+
+}
+.sec1-div button{
+    border: none;
+    width: 130px;
+    height: 50px;
+   
+      
+    /* --- */
+    border-radius: 22px;
+    margin: 10px 20px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+
+    
+}
+.sec1-btn1{
+    background-color: rgb(101 38 213);
+    color: white;
+}
+.sec1-btn2{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);  
+}
+/* -----------------------------------------------------------sec2---------------------------------------- */
+.sec2{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.952); */
+    background-image: url(../image/2023-Mercedes-Benz-E-Class-Teaser-W214-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.overlay-sec2{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.723);
+    text-align: center;
+}
+.sec2-title{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0px;
+    text-transform:capitalize;
+    margin-top: 100PX;
+
+    
+}
+.sec2-p{
+    width: 120px;
+    height: 7px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+}
+.sec2-parent{
+    height: 50%;
+    width: 80%;
+    
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+.sec2-div{
+    
+    height: 80%;
+    width: 28%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom:   2px white solid;
+    border-radius: 10px;
+    border-top: 2px white solid ;
+    z-index: 0;
+    position: relative;
+
+}
+.sec2-div-middle{
+    margin-right: 8%;
+    margin-left: 8%;
+}
+.sec2-icon{
+    font-size: 40px;
+    line-height: 25px;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+
+}
+.sec2-div h2 {
+    margin: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+.sec2-div p{
+    margin: 10;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    font-weight: 500;
+   
+   
+}
+.sec2-div a{
+    text-decoration: none;
+    color: rgb(30, 30, 172);
+    font-size: 25px;
+}
+
+.sec2-div:hover.sec2-div h2{
+    color: black;
+}
+.sec2-div:hover.sec2-div p{
+    color: black;
+}
+.sec2-div:hover .sec2-icon{ 
+    color: black;}
+
+
+    .sec2-div::after{
+        position: absolute;
+        z-index: -1;
+        content: "";
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.651);
+        opacity: 0;
+        transition: 0.8s;
+    
+    }
+    
+    .sec2-div:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }            
+
+
+
+
+    /* --------------------------------------sec3--------------------------------------- */
+    .sec3{
+        width: 100%;
+        height: 150vh;
+        /* background-color: rgb(19, 3, 49); */
+        background-image: linear-gradient(to bottom , rgb(0, 0, 0), rgb(59, 55, 117));
+        text-align: center;
+        padding-top: 50px;
+    }
+    .sec3-title ,.title-title{
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        margin: auto;
+        text-align: center;
+        margin-top: 70px;
+        
+      
+        text-transform:capitalize;
+       
+    
+        
+    }
+    .sec3-p ,.p-p{
+        width: 120px;
+        height: 7px;
+        background-color: white;
+        margin: auto;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .sec3-contaner{
+        width: 80%;
+        height: 65%;
+        overflow: auto;
+        margin: auto;
+        margin-top: 65px;
+
+
+    }
+    .sec3-content{
+        width: 30%;
+        height:50%;
+        float: left;
+        padding: 25px;
+        position: relative;
+        text-align: center;
+     
+    }
+
+    .sec3-content img{
+        width: 100%;
+        height: 100%;
+        
+
+    }
+    .sec3-mid{
+        margin: 0px 5%;
+    }
+    .sec3-content-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(60, 44, 181, 0.664);
+        top: 0;
+        left: 0;
+        padding: 25px;
+        display: none;
+
+        
+    }
+
+    .sec3-content-overlay h2{
+        margin: 15px;
+        font-weight: 600;
+        color: white;
+        text-transform:capitalize;
+        margin-top: 30px;
+
+
+    }
+    .sec3-content-overlay p{
+        margin: 10;
+        color: rgb(216, 216, 216);
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+
+
+    }
+    .sec3-icon{
+        background-color: rgb(20, 20, 109);
+        font-size: 35px;
+        line-height: 35px;
+        color: white;
+        margin: 7px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+                                                   /* hovvvvvvvvvvvvvvvvver */
+    .sec3-content:hover .sec3-content-overlay{
+        display: block;
+        opacity: 1;
+       
+    }
+
+    /* ----------------------------------------------------sec4--------------------------------- */
+
+    .sec4{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom ,rgb(59, 55, 117),rgb(130, 126, 187));
+        padding-top: 25px;
+    }
+    .sec4-title{
+        margin-top: 40px;
+    }
+    .sec4-contaner{
+        width: 85%;
+        height: 75%;
+       
+       
+        margin: auto;
+        margin-top: 45px;
+        overflow: auto;
+    }
+.sec4-content{
+    width: 30%;
+    height: 45%;
+    float: left;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    border-right: solid 4px white;
+    border-left: solid 4px white;
+    position: relative;
+    z-index: 0;
+
+
+
+}
+.sec4-mid{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.sec4-content-title{
+    width: 80% ;
+    height: 100%;
+    margin-left: auto;
+    
+
+
+
+}
+.sec4-content-title h2{
+   
+    font-weight: 600;
+    color: white;
+    text-transform:capitalize;
+    padding-top: 18px;
+
+}
+.sec4-content-title p{
+   
+        color: rgb(216, 216, 216);
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 15px;
+
+}
+.sec4-icon{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    
+    font-size: 35px;
+    
+}
+/* *********hovvvvvvvvvvvver */
+
+.sec4-content:hover .sec4-icon{
+    color: white;
+}
+
+
+.sec4-content::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.sec4-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+/* -------------------------------------------sec5-------------------------------------------- */
+.sec5{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom ,rgb(130, 126, 187),rgb(164, 159, 196));
+    padding-top: 25px;
+}
+.sec5-contaner{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    
+    overflow: auto;
+    margin-top: 75px;
+}
+.sec5-content{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+}
+.sec5-title{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    
+    
+    margin-top: 40px;
+    
+  
+    text-transform:capitalize;
+   
+
+    
+}
+.sec5-p{
+    width: 70px;
+    height: 7px;
+    background-color: white;
+   
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.sec5-content-img{
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    
+
+}
+.sec5-content-img img{
+    width:100%;
+    height: 80%;
+    margin-top: 10%;
+    opacity: 0.9;
+    
+}
+.sec5-img-dott{
+    width: 100%;
+    height: 15%;
+    margin: auto;
+    text-align: center;
+   
+}
+.sec5-img-dott li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 5px 10px;
+
+    
+}
+.sec5-img-dott li:hover{
+    background-color: blue;
+}
+.sec5-img-dott li.first-dott{
+    background-color: blue;
+}
+
+.check{
+
+    width: 90%;
+    margin:15px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.61);
+
+}
+.check .check-icon{
+    color: rgb(16, 16, 121);
+}
+
+/* --------------------------------------------------sec6------------------------------------------------------------- */
+.sec6{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../image/interier.jfif);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.sec6-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.sec6-contaner{
+    width: 90%;
+    height: 90%;
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+
+}
+.sec6-content{
+    width: 25%;
+    height: 100%;
+    padding-top: 75px;
+    float: left;
+    text-align: center;
+    
+
+}
+.sec6-icon{
+    font-size: 30px;
+    line-height: 20px;
+    color: rgb(106, 86, 219);
+
+}
+.sec6-content h2{
+   
+    font-weight: 700;
+    color: white;
+    text-transform:capitalize;
+    padding-top: 18px;
+
+}
+.sec6-content p{
+   
+        color: rgb(216, 216, 216);
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 15px;
+
+}
+/* -----------------------------------------------------sec7----------------------------------------- */
+.sec7{
+    width: 100%;
+    height: 100vh;
+    padding-top: 55px;
+    background-image: linear-gradient(to  bottom ,rgb(135, 150, 218), rgb(57, 110, 145) );
+    /* background-image: linear-gradient(to top right , rgb(143, 105, 167) ,rgb(76, 76, 151)); */
+}
+.sec7-pricing-title{
+text-align: center;
+margin-top: 60px;
+text-transform: capitalize;
+font-size: 40px;
+font-weight: bolder;
+color: rgb(226, 210, 250);
+
+}
+.sec7-pricing-underline{
+    height: 7px;
+    width: 100px;
+    margin: 7px  auto;
+    background-color:  rgb(48, 31, 78);
+    border-radius: 3px;
+    
+    
+    
+}
+
+/* ================ */
+.sec7-contaner{
+
+    width: 85%;
+    height: 65%;
+   
+    margin: 20px auto;
+
+    overflow: auto;
+    
+
+
+}
+.sec7-content{
+
+    height: 100%;
+    width: 30%;
+    float: left;
+    border: rgb(40, 84, 134) 2px solid;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    z-index: 0;
+    
+
+}
+.center-block{
+
+    margin: 0 5%;
+
+}
+.sec7-content-title{
+    margin-top: 10px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+
+}
+.pricing-cont-div{
+    width: 100px;
+    height: 100px;
+    border: rgb(31, 55, 78) solid 2px;
+    border-radius: 50px;
+    margin: 20px auto;
+}
+.num{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.title2{
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 3px;
+}
+.p-title{
+
+    margin: 20px auto;
+}
+.dis-title{
+ font-weight: 150;
+ color: rgb(0, 0, 0);
+ margin-top: 5px;
+
+}
+.cont-but{
+    width: 60%;
+    height: 45px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px;
+    background-color:rgb(52, 7, 97) ;
+    color:rgb(163, 140, 187);
+    font-size: 18px;
+    
+}
+.cont-but:hover{
+cursor: pointer;
+
+}
+/* ===========================================hooover */
+
+.sec7-content:hover .sec7-content-title{
+    color: white;
+}
+.sec7-content:hover .pricing-cont-div{
+    color: white;
+} 
+
+
+.sec7-content::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0, 18, 75, 0.274);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.sec7-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+/* -----------------------------------sec8----------------------------------------- */
+
+.sec8{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../image/MercedesBenzbulding.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.sec8-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.sec8-contaner{
+    width: 80%;
+    height: 95%;
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+
+}
+.sec8-content{
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+    float: left;
+    
+
+}
+.sec8-img{
+    width: 100%;
+    margin: 10px 0px;
+    overflow: auto;
+}
+.sec8-img img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    float: left;
+
+}
+.sec8-img-title{
+width: 60%;
+height: 90px;
+float: left;
+margin-left: 25px;
+margin-top: 20px;
+}
+.sec8-img-title h2{
+    color: white;
+}
+.sec8-img-title h3{
+    color: rgb(91, 91, 252);
+}
+.sec8-content-title{
+    color: rgb(107, 107, 107);
+    font-weight: 600;
+}
+
+/* ----------------------------------sec9------------------------------------------- */
+.sec9{
+    width: 100%;
+    height: 100vh;
+    padding-top: 55px;
+    background-image: linear-gradient(to  top ,rgb(3, 107, 133), rgb(80, 147, 192) );
+    /* background-image: linear-gradient(to top right , rgb(143, 105, 167) ,rgb(76, 76, 151)); */
+}
+.sec9-title{
+text-align: center;
+margin-top: 50px;
+text-transform: capitalize;
+font-size: 30px;
+font-weight: bolder;
+color: rgb(255, 255, 255);
+
+}
+.sec9-p{
+    height: 7px;
+    width: 100px;
+    margin: 9px  auto;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 3px;
+    
+}
+
+
+.sec9-contaner{
+
+    width: 80%;
+    height: 60%;
+   
+    margin: 60px auto;
+
+    overflow: auto;
+
+
+}
+.sec9-content{
+
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: rgba(174, 184, 190, 0.733);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    z-index: 0;
+
+}
+.sec9-center-block{
+
+    margin: 0 5%;
+
+}
+
+.sec9-content h2{
+    text-transform: capitalize;
+    margin-bottom:10px;
+
+}
+.sec9-content h4{
+    color: rgb(34, 34, 34);
+}
+.sec9-img{
+    
+    
+    width: 100%;
+    height: 70%;
+    position: relative;
+    
+}
+.sec9-img img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    
+    
+    
+}
+.sec9-img-overlay{
+    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    
+    
+
+
+
+
+}
+.sec9-img-overlay a{
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    
+}
+.sec9-icon{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 40px;
+    
+  
+}
+.sec9-content:hover .sec9-img-overlay{
+    display: block;
+} 
+
+
+.sec9-content::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(68, 68, 68, 0.603);
+    opacity: 0;
+    transition: 0.8s;
+
+}
+.sec9-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.sec9-content:hover h2{
+    color: beige;
+    transition: 0.4s;
+}
+
+
+.sec9-content:hover h4{
+    color: beige;
+    transition: 0.4s;
+}
+
+/* =============================hooooover */
+/* --------------------------------------------sec10---------------------------------------------------------- */
+
+.sec10{
+    width: 100%;
+    height: 120vh;
+    padding-top: 45px;
+    background-image: linear-gradient(to  bottom ,rgb(3, 107, 133), rgb(59, 49, 100) );
+    /* background-image: linear-gradient(to top right , rgb(143, 105, 167) ,rgb(76, 76, 151)); */
+}
+/* .sec7-pricing-title{
+text-align: center;
+margin-top: 60px;
+text-transform: capitalize;
+font-size: 40px;
+font-weight: bolder;
+color: rgb(226, 210, 250);
+
+}
+.sec7-pricing-underline{
+    height: 7px;
+    width: 100px;
+    margin: 7px  auto;
+    background-color:  rgb(48, 31, 78);
+    border-radius: 3px;
+    
+} */
+
+
+.sec10-contaner{
+
+    width:90%;
+    height: 80%;
+   
+    margin: 10px auto;
+
+    overflow: auto;
+
+
+}
+.sec10-content{
+
+    height: 70%;
+    width: 30%;
+    float: left;
+    color: white;
+   position: relative;
+   z-index: 0;
+   border-bottom:   2px white solid;
+   border-radius: 10px;
+   border-top: 2px white solid ;
+ 
+   
+    
+
+}
+.sec10-center-block{
+
+    margin: 0 5%;
+
+}
+.sec10-content img{
+    width: 230px;
+    height: 290px;
+    margin: 10px;
+    border-bottom:   2px white solid;
+    border-radius: 10px;
+    border-top: 2px white solid ;
+  
+}
+.sec10-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);
+    top: 0;
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sec10-content::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(68, 68, 68, 0.603);
+    opacity: 0;
+    transition: 0.8s;
+}
+.sec10-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.sec10-contaner a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ===========================================================hoooover */
+/* -------------------------------------------sec11---------------------------------------- */
+
+.sec11{
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+    text-align: center;
+}
+.sec11-contaner{
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+.sec11-contaner h4{
+    font-size: 15px;
+    color: rgb(209, 209, 209);
+    font-weight: 200;
+    text-transform: uppercase;
+   
+
+}
+.sec11-contaner img{
+    width: 80px;
+    height: 80px;
+    margin: 30px 20px;
+}
+.sec11-icon{
+    height: 60px;
+    margin-bottom: 10px;
+    
+    text-align: center;
+
+}
+.sec11-icon a{
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+}
